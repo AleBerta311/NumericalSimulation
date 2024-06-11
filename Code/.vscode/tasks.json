@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "make",
+        "args": [], // You can specify targets here if needed, e.g., ["all"]
+        "options": {
+            "cwd": "${workspaceFolder}/GeneticSalesman" // Ensure this points to the directory containing the Makefile
+          },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Task to run Makefile."
+      }
+    ]
+  }
+  
